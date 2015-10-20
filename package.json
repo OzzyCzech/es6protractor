@@ -1,0 +1,17 @@
+{
+  "name": "es6",
+  "version": "0.0.1",
+  "description": "Opa Protracor, Babel, ES6 style...",
+  "private": true,
+  "dependencies": {
+    "babel-core": "^5.8.25",
+    "babel-loader": "^5.3.2",
+    "chromedriver": "^2.19.0",
+    "protractor": "^2.5.1",
+    "should": "^7.1.1",
+    "webpack": "^1.12.2"
+  },
+  "scripts": {
+    "postinstall": "node node_modules/protractor/bin/webdriver-manager update"
+  }
+}
