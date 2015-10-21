@@ -2,27 +2,19 @@
 
 export class SignUpForm {
 
-	get signUpButton() {
-		return $('#loginDropdownMenu > a#loginButton');
-	}
-
 	get loginInput() {
-		return $('#loginForm input[name="email"]');
+		return $('#user_login');
 	}
 
 	get passwordInput() {
-		return $('#loginForm input[name="password"]');
+		return $('#user_pass');
 	}
 
 	get submitButton() {
-		return $('#loginForm button[type="submit"]');
-	}
-
-	get profileLink() {
-		return $('#showUserMenu');
+		return $('#loginform input[type="submit"]');
 	}
 }
 
 export function signUpFormIsPresent() {
-	return $('#loginForm').isPresent();
+	return $('#loginform').isPresent();
 }

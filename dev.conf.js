@@ -10,7 +10,7 @@ exports.config = {
 	directConnect: true,
 	//chromeDriver: '../../node_modules/protractor/selenium/chromedriver',
 
-	baseUrl: 'http://www.testomato.com/',
+	baseUrl: 'https://www.zdrojak.cz/',
 
 	// Capabilities to be passed to the webdriver instance.
 
@@ -27,8 +27,11 @@ exports.config = {
 	},
 
 	onPrepare: function () {
-		//require("babel/register")(); // register babel
+		//require("babel-core/register")(); // register babel
 		browser.driver.manage().window().setSize(1280, 1024);
+
+		// https://github.com/angular/protractor/blob/9891d430aff477c5feb80ae01b48356866820132/lib/protractor.js#L158
+		browser.ignoreSynchronization = true; // Angular we don't have it...
 	},
 
 	// Spec patterns are relative to the current working directly when

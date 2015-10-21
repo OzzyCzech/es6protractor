@@ -11,9 +11,7 @@ import {SignUpForm} from './SignUpForm.js';
 export function SignUp(username, password) {
 	let signUpForm = new SignUpForm();
 
-	signUpForm.signUpButton.click();
-	signUpForm.loginInput.clear();
-
+	expect(signUpForm.loginInput.isPresent()).toBe(true);
 	signUpForm.loginInput.clear();
 	signUpForm.loginInput.sendKeys(username);
 
