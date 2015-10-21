@@ -27,7 +27,7 @@ exports.config = {
 	},
 
 	onPrepare: function () {
-		//require("babel-core/register")(); // register babel
+		// Change browser size after launch
 		browser.driver.manage().window().setSize(1280, 1024);
 
 		// https://github.com/angular/protractor/blob/9891d430aff477c5feb80ae01b48356866820132/lib/protractor.js#L158
