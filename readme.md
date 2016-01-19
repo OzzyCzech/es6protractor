@@ -20,3 +20,7 @@ node_modules/protractor/bin/protractor ./dev.conf.multi.js
 - https://angular.github.io/protractor/
 - https://babeljs.io/
 - http://www.ecma-international.org/ecma-262/6.0/
+
+## Good to know 
+
+- [Timeouts](https://github.com/angular/protractor/blob/master/docs/timeouts.md)
